@@ -9,9 +9,9 @@
   grid-gap: 10px;
 }
 
-.post-1 {background-color: aqua;}
-.post-2 {background-color: greenyellow;}
-.post-3 {background-color: red}
+#post-1 {background-color: aqua;}
+#post-2 {background-color: greenyellow;}
+#post-3 {background-color: red}
 
 p, h2 {font-family: monospace;
 padding: 10px;}
