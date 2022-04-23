@@ -1,36 +1,39 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Technical blog post</title>
-    <meta charset="UTF-8">
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
-  </head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="../styles/main.css" rel="stylesheet" type="text/css">
+        <title>HTML Template</title>
+    </head>
+    <body>
+
+      <h1>How to name CSS classes and IDs</h1>
+      <h2>And more importantly - why? </h2>
+      <h3>23 April 2022</h3>
+      
   
-  <body>
-    <h1>How to name CSS classes and IDs</h1>
-    <h2>And more importantly - why? </h2>
-    <h3>23 April 2022</h3>
-    
+  
+  <p>Disagreements about best practices are on the use of classes and IDs abound, but consensus is absolute on at least one issue: Do not give CSS classes names related to styling (like red-box or left-side-bar) Why? To avoid losing the maintenance advantages of CSS. Obviously.
+  Well this may be obvious to a developer with even a few weeks experience, but if you are a total newbie like me with just a few hours under their belt, it may not be so obvious. Here, I’ll take you through it. </p>
+  
+  <p>A great benefit of having a css stylesheet seperate and independent of your html is that you can make changes to the appearance of your page with minimal or no contact with the html. </p>
+  
+  <p>Imagine if you were holding a party for your eleventy-first birthday, and you wanted your boring white house to take on a new colour to celebrate the event. You could paint your house a bright new colour scheme, or you could simply project light onto your house and give it any colour you wanted. In fact, once you had set up the lights properly, you could give your house a new colour every night of the year with minimal effort!
+  </p>
+  
+  <p> Consider the following royalty free image from a building lit in such a way for the Eindhoven GLOW festival. </p>
+  <img src="../images/eindhoven-light.jpeg" alt="A medieval building is lit with colourful lighting">
+  
+  <p>CSS set up correctly is like such a lighting system.</p>
+  
+  <p>If you have written your CSS nicely, especially if you have made sensible use of variables, you may be able to change the colour scheme of your whole website by just tweaking a few lines of CSS. This is the ideal we are striving for when we write our CSS. 
+  However, if we use stylistic names for our CSS classes, for example if we have classes called “blue-box” and “blue-bar” instead of something like “comment-box” or “side-bar” what happens if we want to change those boxes from blue to yellow? Instead of simply changing the colour in the css, we will have to also go through our HTML and change every occurrence of ‘blue-box’ and ‘blue-bar’ to ‘yellow-box’ and ‘yellow-bar’. 
+  </p>
+  
+  <p>Much better to give the css classes functional or generic names, and keep the styling information independent of the html.
+  </p> 
 
-
-<p>Disagreements about best practices are on the use of classes and IDs abound, but consensus is absolute on at least one issue: Do not give CSS classes names related to styling (like red-box or left-side-bar) Why? To avoid losing the maintenance advantages of CSS. Obviously.
-Well this may be obvious to a developer with even a few weeks experience, but if you are a total newbie like me with just a few hours under their belt, it may not be so obvious. Here, I’ll take you through it. </p>
-
-<p>A great benefit of having a css stylesheet seperate and independent of your html is that you can make changes to the appearance of your page with minimal or no contact with the html. </p>
-
-<p>Imagine if you were holding a party for your eleventy-first birthday, and you wanted your boring white house to take on a new colour to celebrate the event. You could paint your house a bright new colour scheme, or you could simply project light onto your house and give it any colour you wanted. In fact, once you had set up the lights properly, you could give your house a new colour every night of the year with minimal effort!
-</p>
-
-<p> Consider the following royalty free image from a building lit in such a way for the Eindhoven GLOW festival. </p>
-<img src="../images/eindhoven-light.jpeg" alt="A medieval building is lit with colourful lighting">
-
-<p>CSS set up correctly is like such a lighting system.</p>
-
-<p>If you have written your CSS nicely, especially if you have made sensible use of variables, you may be able to change the colour scheme of your whole website by just tweaking a few lines of CSS. This is the ideal we are striving for when we write our CSS. 
-However, if we use stylistic names for our CSS classes, for example if we have classes called “blue-box” and “blue-bar” instead of something like “comment-box” or “side-bar” what happens if we want to change those boxes from blue to yellow? Instead of simply changing the colour in the css, we will have to also go through our HTML and change every occurrence of ‘blue-box’ and ‘blue-bar’ to ‘yellow-box’ and ‘yellow-bar’. 
-</p>
-
-<p>Much better to give the css classes functional or generic names, and keep the styling information independent of the html.
-</p> </body>
-
+    </body>
 </html>
