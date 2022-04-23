@@ -1,14 +1,18 @@
-.container {
-  font-size: 1em;
-  min-height: 500px;
+.post-container {
+  font-size: 12px;
+  min-height: 300px;
   width: 100%;
   background: LightGray;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+  grid-template-rows: 1fr, 1fr;
+  grid-gap: 10px;
 }
 
 .post-1 {background-color: aqua;}
 .post-2 {background-color: greenyellow;}
 .post-3 {background-color: red}
+
+p, h2 {font-family: monospace;
+padding: 10px;}
+
