@@ -1,0 +1,14 @@
+.container {
+  font-size: 1em;
+  min-height: 500px;
+  width: 100%;
+  background: LightGray;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.post-1 {background-color: aqua;}
+.post-2 {background-color: greenyellow;}
+.post-3 {background-color: red}
