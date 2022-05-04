@@ -15,7 +15,9 @@
 
 #post-1 {background-color: aqua;}
 #post-2 {background-color: greenyellow;}
-#post-3 {background-color: steelblue }
+#post-3 {background-color: steelblue;}
+#post-4 {background-color: peru }
+
 
 body {font-family: monospace;
 padding: 10px;}
