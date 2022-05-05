@@ -9,13 +9,37 @@
     </head>
     <body>
 
-      <h1>How to name CSS classes and IDs</h1>
-      <h2>And more importantly - why? </h2>
+      <h1>CSS classes and IDs</h1>
+      <h2>Best practices </h2>
       <h3>23 April 2022</h3>
       
+<h3>What are the best practices associated with using classes vs. ids?</h3>
+
+<h4>When to use IDs:</h4>
+
+<p>IDs are reserved for <em>unique</em> elements on the page. As such are ideally given names that imply uniqueness, such as <em>navbar</em> or <em>firstpost</em>.</p>
+
+<p>IDs have a special browser function - they can be linked to in order to directly to allow you to navigate directly to that part of the webpage. For example:</p>
+
+<pre><code>&lt;a href = &quot;#thirdpost&quot;&gt; </code></pre>
+
+<p>It is easier to access a particular element with the getElementById javascript function than by using classes, so if you plan to manipulate an element with javascript, it should have an ID.</p>
+
+<h4>When to use classes</h4>
+
+<p>Classes can apply to multiple elements. If another element has the same class (or if there might be another element with one in the future) you should use a class. This will make the code more manageable in the future.</p>
+
+<p>You can apply multiple classes to an element, but not multiple IDs. This can be helpful for streamlining code, but can also make code more difficult to understand, manage and maintain in future.</p>
+
+<h4>You can use both</h4>
+
+<p>What if you need javascript access to an object, but it also shares styling with multiple objects? No problem, you can give it both a class and an ID.</p>
+
+
+    
+  <h2>Bonus material: How to name CSS classes and IDs</h2>Bonus material: 
   
-  
-  <p>Disagreements about best practices are on the use of classes and IDs abound, but consensus is absolute on at least one issue: Do not give CSS classes names related to styling (like red-box or left-side-bar) Why? To avoid losing the maintenance advantages of CSS. Obviously.
+  <p>Disagreements about best practices are on the use of classes ßand IDs abound, but consensus is absolute on at least one issue: Do not give CSS classes names related to styling (like red-box or left-side-bar) Why? To avoid losing the maintenance advantages of CSS. Obviously.
   Well this may be obvious to a developer with even a few weeks experience, but if you are a total newbie like me with just a few hours under their belt, it may not be so obvious. Here, I’ll take you through it. </p>
   
   <p>A great benefit of having a css stylesheet seperate and independent of your html is that you can make changes to the appearance of your page with minimal or no contact with the html. </p>
@@ -30,7 +54,7 @@
   
   <p>If you have written your CSS nicely, especially if you have made sensible use of variables, you may be able to change the colour scheme of your whole website by just tweaking a few lines of CSS. This is the ideal we are striving for when we write our CSS. 
   However, if we use stylistic names for our CSS classes, for example if we have classes called “blue-box” and “blue-bar” instead of something like “comment-box” or “side-bar” what happens if we want to change those boxes from blue to yellow? Instead of simply changing the colour in the css, we will have to also go through our HTML and change every occurrence of ‘blue-box’ and ‘blue-bar’ to ‘yellow-box’ and ‘yellow-bar’. 
-  </p>
+  </p>ß
   
   <p>Much better to give the css classes functional or generic names, and keep the styling information independent of the html.
   </p> 
