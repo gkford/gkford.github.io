@@ -1,25 +1,80 @@
 .post-container {
   font-size: 12px;
-  min-height: 300px;
   width: 100%;
-  background: LightGray;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+
+  /*
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+   grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
   grid-template-rows: 1fr, 1fr;
   grid-gap: 10px;
+*/
 }
 
 .post {
+  margin: 10px;
   padding: 10px;
+  box-shadow: 5px 5px 5px black;
+  width: 300px;
+  min-height: 100px;
+  background-color: #87a4c2;
+  border-radius: 1%;
 }
 
-#post-1 {background-color: aqua;}
-#post-2 {background-color: greenyellow;}
-#post-3 {background-color: steelblue;}
-#post-4 {background-color: peru }
-#post-5 {background-color: grey }
+.post::after {
+    content: "";
+    flex: auto;
+  }
+  
+  img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+
+    }
+
+    @media (min-width: 800px) {
+      #glow-img {
+        float: left;
+        padding: 0 20px 0 0;
+      }
+    }
+      @media (max-width: 800px) {
+        #glow-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
 
 
-body {font-family: monospace;
-padding: 10px;}
 
+
+body {
+  font-family: monospace;
+  padding: 10px;
+  background-color: #FFE8D4;
+  background-image: url("../images/clean-blue-paper.png");
+}
+
+h1 {text-align: center;}
+
+#subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#heading {
+  font-size: xx-large;
+  margin-bottom: 5px;
+  
+
+}
+
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
