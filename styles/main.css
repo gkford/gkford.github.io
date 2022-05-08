@@ -31,7 +31,11 @@
     content: "";
     flex: auto;
   }
-  
+ 
+p.post {
+  text-align: center;
+}
+
   img {
       width: 100%;
       max-width: 500px;
@@ -68,6 +72,14 @@ body {
     background-size: 400%;
     animation: bg-ani 90s infinite alternate;
   }
+
+  a:link {
+    color: hotpink;
+  }
+
+  a:visited {
+    color: pink;
+  }
   
   @keyframes bg-ani{
     0% {
@@ -79,7 +91,7 @@ body {
   }
 
 
-h1 {text-align: center;}
+h1, h2, h3 {text-align: center;}
 
 #subtitle {
   text-align: center;
