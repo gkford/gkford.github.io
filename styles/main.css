@@ -1,7 +1,7 @@
 .post-container {
   font-size: 12px;
   width: 100%;
-  max-width: 300px;
+  max-width: 10000px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -22,11 +22,46 @@
   margin: 10px;
   padding: 10px;
   box-shadow: 0px 0px 10px 1px rgb(48, 52, 60);
-  width: 300px;
   min-height: 100px;
   background-color: rgb(55, 90, 150);
   border-radius: 1%;
 }
+
+/* desktop/laptop */
+@media screen and (min-width: 1200px) {
+  .post {
+    max-width: 300px;
+    min-width: 300px;
+
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .post {
+    max-width: 300px;
+    min-width: 300px;
+    background-color: darkcyan;
+  }
+}
+
+/* tablet portrait */
+@media screen and (max-width: 768px) {
+  .post {
+    max-width: 300px;
+    min-width: 300px;
+    background-color: rgb(151, 0, 0);
+  }
+}
+/* mobile portrait */
+@media screen and (max-width: 320px) {
+  .post {
+    min-width: 200px;
+    max-width: 200px;
+    background-color: gold;
+  }
+}
+
+
 
 .post::after {
     content: "";
